@@ -5,6 +5,11 @@ public class LoanSystem extends BankAccount {
     double creditPercent;
     int loanDate;
 
+    public LoanSystem()
+    {
+        creditLimit = 1000;
+    }
+
     public String takeLoan(int yourSum)
     {
         if (yourSum < creditLimit) {

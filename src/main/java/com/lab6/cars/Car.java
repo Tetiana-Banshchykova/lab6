@@ -10,5 +10,5 @@ public abstract class Car {
         return("Hitting the gas!");
     }
 
-    abstract void breakers();
+    abstract String breakers();
 }
