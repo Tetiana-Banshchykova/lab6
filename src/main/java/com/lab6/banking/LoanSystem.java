@@ -12,7 +12,7 @@ public class LoanSystem extends BankAccount {
 
     public String takeLoan(int yourSum)
     {
-        if (yourSum < creditLimit) {
+        if (yourSum > creditLimit) {
             return String.format("Sorry, unfortunately your credit limit is too low for this loan. YOur current limit is %.2f", creditLimit);
         }
         else
